@@ -1,5 +1,6 @@
 package modules.Geografia;
-import Materia;
+
+import modules.Materia;
 
 class Geografia extends Materia {
     public Geografia() {
@@ -7,7 +8,7 @@ class Geografia extends Materia {
     }
     
     @Override
-    void exibirConteudo() {
+    public void exibirConteudo() {
         System.out.println("Conteúdo de Geografia: estudo do espaço geográfico e suas interações.");
     }
 }
