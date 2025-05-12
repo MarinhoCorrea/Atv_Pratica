@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] args) {
+    public staaaaaaaaaaaatic void main(String[] args) {
         
     }
 }
