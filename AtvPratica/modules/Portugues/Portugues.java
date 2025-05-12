@@ -1,5 +1,14 @@
 package modules.Portugues;
+import modules.Materia;
 
-public class Portugues {
+
+class Portugues extends Materia {
+    public Portugues() {
+        super("Português");
+    }
     
+    @Override
+    public void exibirConteudo() {
+        System.out.println("Conteúdo de Português: Escolas Literárias");
+    }
 }
