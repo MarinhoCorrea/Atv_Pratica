@@ -1,19 +1,8 @@
 package modules.Portugues;
 
-public abstract class Romantismo implements EscolasLiterarias {
-    private String Nome;
-    private String Periodo;
-    private String Caracteristicas;
+public class Romantismo extends EscolasLiterarias {
     @Override
-    public getNome(){
-        return Nome;
-    }
-    @Override
-    public get(){
-        return Nome;
-    }
-    @Override
-    public getNome(){
-        return Nome;
+    public void exibirConteudo() {
+        System.out.println("Conteúdo de Romantismo:  Caracterizado por uma ênfase na emoção, na subjetividade e no individualismo, o Romantismo se opôs ao racionalismo e à objetividade do Iluminismo e do Neoclassicismo. ");
     }
 }
