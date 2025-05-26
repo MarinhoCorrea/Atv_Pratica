@@ -1,0 +1,62 @@
+# Diretórios e arquivos gerados
+bin/
+target/
+out/
+
+# Arquivos de compilação
+*.class
+*.jar
+*.war
+*.ear
+
+# Configurações do ambiente de desenvolvimento
+*.iml
+*.idea/
+*.vscode/
+*.project
+*.classpath
+*.settings/
+
+# Dependências geradas pelo Maven e Gradle
+.mvn/
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/dependency-reduced-pom.xml
+**/target/
+**/*.jar
+
+.gradle/
+**/*.gradle
+**/gradle-app.setting
+build/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+hs_err_pid*
+
+# Arquivos do sistema operacional
+Thumbs.db
+.DS_Store
+
+# Arquivos do Java
+*.javadoc
+
+# Configurações do IDE Eclipse
+.metadata
+bin/
+.classpath
+.project
+.settings/
+
+# Configurações específicas do NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
