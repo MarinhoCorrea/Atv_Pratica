@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 import modules.Geografia.QuizGeo;
-import modules.Historia.PreColonia;
 import modules.Historia.QuizHistoria;
 import modules.Portugues.QuizPortugues;
 

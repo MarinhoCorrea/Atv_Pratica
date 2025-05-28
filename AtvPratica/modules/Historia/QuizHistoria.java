@@ -18,7 +18,12 @@ public class QuizHistoria {
         int resposta = scanner.nextInt();
         switch (resposta) {
             case 1:
-
+                try {
+                    Dinamica();
+                } catch (InterruptedException e) {
+                    System.out.println("Ocorreu um erro na sua viagem ☹️ \nTente novamente");
+                    e.printStackTrace();
+                }
                 break;
 
             case 0:
