@@ -37,5 +37,7 @@ public class QuizPortugues {
         System.out.println("Um senhor alimentando patos em um lago aparenta ser a fonta da voz maravilhosa. Sua vestimenta o chama a atenção: mantos, um cetro apoiado no chão e uma coroa com diversas joias.");
         System.out.println("Ao admirar o senhor por um tempo, confuso com a real identidade, você sente uma vibração em seu bolso: Um relógio, que outrora não estava lá, começa a apitar.");
         System.out.println("Ao pegar o relógio, uma surpresa não agrádavel se mostra: S.A.M.I.R.A. havia se disfarçado como um relógio e escondido em seu bolso.\n 'Olá! Como você está amigão???!'\n Você se assusta com o ocorrido, e seu grito chama a atenção do nobre senhor, que anda em sua direção para cumprimenta-lo.");
+        System.out.println("Olá senhor, como estás? Por que estás me bisbilhotando neste belo entardecer?");
+        System.out.println("")
     }
 }
