@@ -7,6 +7,8 @@ public class QuizHistoria {
     public PreColonia preColonia = new PreColonia();
     public Colonial Colonial = new Colonial();
     public Imperial Imperial = new Imperial();
+    public Republica Republica = new Republica();
+    public ArquivosAIH arquivosAIH = new ArquivosAIH();
     public String resposta;
 
     public void SelecionarAtv() {
@@ -14,8 +16,9 @@ public class QuizHistoria {
                 "\nOlá, Historiador ! Nós te escolhemos para uma Grande Missão!\nA AIH (Agência Intergalática Historiadora) percebeu várias falhas no passado da história do Brasil e que precisa ser resolvido\n");
         System.out.println(
                 "Seu papel será saltar pelas Eras do Brasil e ir auxiliando as figuras que estiverem com dificuldade.\n");
-        System.out.println("Aceita a missão? Sim (1) /Não (0)");
+        System.out.println("1-Aceitar a missão \n2-Entrar nos arquivos da AIH e ver o conteúdo das Eras \n0-Recusar a missão e sair");
         int resposta = scanner.nextInt();
+
         switch (resposta) {
             case 1:
                 try {
@@ -25,7 +28,27 @@ public class QuizHistoria {
                     e.printStackTrace();
                 }
                 break;
-
+            case 2:
+                arquivosAIH.exibirConteudo();
+                System.out.println(
+                        "Agora que você já viu o conteúdo, aceita a missão? \n1-Sim \n0-Não");
+                int resposta2 = scanner.nextInt();
+                do {
+                     if (resposta2 == 1) {
+                    try {
+                        Dinamica();
+                    } catch (InterruptedException e) {
+                        System.out.println("Ocorreu um erro na sua viagem ☹️ \nTente novamente");
+                        e.printStackTrace();
+                    }
+                } else if (resposta2 == 0) {
+                    System.out.println("Que pena, Historiador! Você perdeu a oportunidade de se tornar uma lenda viva dentro da Agencia...\n");
+                } else {
+                    System.out.println("Resposta inválida. Por favor, digite 1 para Sim ou 0 para Não.");
+                    resposta2 = scanner.nextInt();
+                }
+                } while (resposta2 != 0);
+                break;
             case 0:
                 System.out.println(
                         "Que pena, Historiador! Você perdeu a oportunidade de se tornar uma lenda viva dentro da Agencia...\n");
@@ -319,7 +342,7 @@ public class QuizHistoria {
             resposta = scanner.next().toLowerCase();
 
             if (resposta.equals("b")) {
-                System.out.println("Correto." + republica.estadoNovo());
+                System.out.println("Correto." + Republica.estadoNovo());
                 Thread.sleep(2000);
                 System.out.println("Vargas: Sim... 1937. Assumi poderes totais... mas para manter a ordem, dizia eu.");
             } else {
@@ -340,7 +363,7 @@ public class QuizHistoria {
             resposta = scanner.next().toLowerCase();
 
             if (resposta.equals("c")) {
-                System.out.println("Resposta correta!" + republica.clt());
+                System.out.println("Resposta correta!" + Republica.clt());
                 Thread.sleep(2000);
                 System.out.println("Vargas: A CLT foi meu maior legado aos trabalhadores... embora alguns digam que foi para controlar os sindicatos.");
             } else {
@@ -361,7 +384,7 @@ public class QuizHistoria {
             resposta = scanner.next().toLowerCase();
 
             if (resposta.equals("a")) {
-                System.out.println("Resposta correta!" + republica.suicidioVargas());
+                System.out.println("Resposta correta!" + Republica.suicidioVargas());
                 Thread.sleep(2000);
                 System.out.println("Vargas: Eu saí da vida para entrar na história... e você entendeu o motivo.");
             } else {
@@ -372,9 +395,21 @@ public class QuizHistoria {
         } while (!resposta.equals("a"));
 
         System.out.println("Vargas desaparece lentamente na névoa... O cenário se ilumina e as ruínas se restauram.");
+        Thread.sleep(2000);
         System.out.println("Você completou a jornada histórica com sabedoria e coragem.");
-        System.out.println("A máquina do tempo se ativa pela última vez, levando você de volta ao presente...\n");
-        System.out.println("✨ PARABÉNS! Você finalizou o Quiz da História do Brasil! ✨");
+        System.out.println("A máquina do tempo se ativa pela última vez, levando você de volta ao presente...");
+        Thread.sleep(2000);
+        System.out.println("Você chegou ao presente, onde a AIH aguarda ansiosamente por suas descobertas.");
+        System.out.println("Você contou tudo o que viu e aprendeu, e a AIH fica impressionada com seu desempenho.");
+        System.out.println("AIH: Parabéns, Historiador! Você restaurou a história do Brasil e ajudou a corrigir as falhas do passado.");
+        System.out.println("AIH: Sua missão foi um sucesso! Você é um verdadeiro herói da história!");
+        System.out.println("Você se despede da AIH e volta para casa, e fica feliz pois encerrou sua missão");
+        System.out.println("De repente, o telefone toca...");
+        Thread.sleep(2000);
+        System.out.println("AIH:Achou que tinha acabado? HAHAHAHAH ");
+        Thread.sleep(2000);
+        System.out.println("Apenas começou!");
+        System.out.println("Obrigado por jogar! Esperamos que tenha gostado da experiência.");
 
     }
 

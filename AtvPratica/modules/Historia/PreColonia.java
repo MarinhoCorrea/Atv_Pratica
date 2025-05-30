@@ -1,9 +1,12 @@
 package modules.Historia;
 
-public   class PreColonia extends PeriodosBrasil {
+public class PreColonia extends Historia {
     @Override
-    public  String exibirConteudo() {
-        return "Conteúdo do Brasil antes da Chegada dos Portugueses: ";
+    public  void exibirConteudo() {
+        System.out.println("Conteúdo do Brasil Pré-Colonial: ");
+        System.out.println("Organização Tribal: " + conteudoOrganizacaoTribal());
+        System.out.println("Economia: " + conteudoEconomia());
+        System.out.println("Pintura Corporal: " + PinturaCorporal());
     }
     public  String conteudoOrganizacaoTribal() {
         return "A maioria dos povos indígenas no Brasil Pré-Colonial era organizada em tribos com estruturas coletivas e lideranças locais.";

@@ -1,9 +1,12 @@
 package modules.Historia;
 
-public class Imperial extends PeriodosBrasil {
+public class Imperial extends Historia {
     @Override
     public void exibirConteudo() {
         System.out.println("Conteúdo do Brasil Imperial: ");
+        System.out.println("Idade da Coroação: " + idadeCoroacao());
+        System.out.println("Guerra do Paraguai: " + guerraParaguai());
+        System.out.println("Lei Áurea: " + leiAurea());
     }
     public String idadeCoroacao(){
         return "Dom Pedro II assumiu como imperador do Brasil com 14 anos de idade, após o Golpe da Maioridade, que antecipou sua maioridade legal, que era aos 18 anos.\n A antecipação da maioridade ocorreu em 1840 e a coroação foi em 1841, marcando o início do Segundo Reinado.";

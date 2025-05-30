@@ -1,9 +1,12 @@
 package modules.Historia;
 
-public class Colonial extends PeriodosBrasil {
+public class Colonial extends Historia {
     @Override
     public void exibirConteudo() {
-        System.out.println("Conteúdo do Brasil Colonial:");
+        System.out.println("Conteúdo do Brasil Colonial: ");
+        System.out.println("Produto de Exportação: " + produtoExportacao());
+        System.out.println("Mão de Obra: " + maoDeObra());
+        System.out.println("Invasões Estrangeiras: " + invasoesEstrangeiras());
     }
     public String produtoExportacao() {
         return "O principal produto de exportação do Brasil Colonial era o açúcar, devido à terra que promoveu grande produção e à neccesidade do mercado.";
