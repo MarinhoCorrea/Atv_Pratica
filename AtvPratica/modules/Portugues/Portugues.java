@@ -1,6 +1,6 @@
 package modules.Portugues;
-import modules.Materia;
 
+import modules.Materia;
 
 class Portugues extends Materia {
     public Portugues() {

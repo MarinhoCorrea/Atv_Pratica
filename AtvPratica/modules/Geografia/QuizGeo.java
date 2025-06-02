@@ -1,37 +1,41 @@
 package modules.Geografia;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class QuizGeo {
     private Scanner scanner = new Scanner(System.in);
     ArrayList<Rochas> rochas = new ArrayList<>();
-    
 
     public void SelecionarAtv() {
         System.out.println("\nOlá, aventureiro! Qual jornada deseja encarar hoje?");
-        System.out.println("\n1 - Partir em uma aventura em busca da ROCHA SUPREMA\n2 - Analisar os livros antigos na Biblioteca Real\n3 - Sair");
+        System.out.println(
+                "\n1 - Partir em uma aventura em busca da ROCHA SUPREMA\n2 - Analisar os livros antigos na Biblioteca Real\n3 - Sair");
         int escolha = scanner.nextInt();
         scanner.nextLine();
-        switch(escolha) {
+        switch (escolha) {
             case 1:
-                aventuraRochaSuprema();
-            break;
+                try {
+                    aventuraRochaSuprema();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                break;
 
             case 2:
                 bibliotecaReal();
-            break;
+                break;
 
             case 3:
                 System.out.println("Adeus viajante! Até uma próxima aventura 😉");
-            break;
+                break;
 
             default:
                 SelecionarAtv();
         }
     }
 
-    public void aventuraRochaSuprema() {
-
+    public void aventuraRochaSuprema() throws InterruptedException {
         rochas.add(new Magmaticas("Granito"));
         rochas.add(new Magmaticas("Basalto"));
         rochas.add(new Sedimentares("Calcário"));
@@ -40,66 +44,97 @@ public class QuizGeo {
         rochas.add(new Metamorficas("Gnaisse"));
 
         System.out.println("\n🌍 Você é um aventureiro destemido, em busca da lendária ROCHA SUPREMA.");
-        System.out.println("Dizem que ela contém o conhecimento geológico de todas as eras e apenas os sábios podem encontrá-la.");
-        System.out.println("\nApós dias de caminhada por desertos implacáveis e montanhas escarpadas, você chega a um vale misterioso.");
-        System.out.println("No meio do caminho, uma figura surge: um velho sábio, sentado sobre uma pedra com inscrições antigas.");
-        System.out.println("\n👤 Sábio: 'Ah, viajante... para encontrar a ROCHA SUPREMA, você precisa primeiro compreender a essência da terra.'");
-        System.out.println("'Cada rocha tem sua história, seu segredo. Você está preparado para enfrentar o desafio?'");
+        Thread.sleep(2000);
+        System.out.println("Dizem que ela contém o conhecimento geológico de todas as eras...");
+        Thread.sleep(2000);
+        System.out.println("...e apenas os sábios podem encontrá-la.");
+        Thread.sleep(2000);
 
-        System.out.println("\n⚔️ Determinado, você decide continuar sua jornada.");
-        System.out.println("A cada passo, você encontra formações rochosas desconhecidas, e precisa identificá-las corretamente.");
-        System.out.println("Somente os que dominam a geologia conseguirão chegar ao templo secreto.");
+        System.out.println("\n⛰️ Após dias enfrentando desertos escaldantes e cavernas escuras...");
+        Thread.sleep(2000);
+        System.out.println("...você chega a um vale silencioso e envolto em neblina.");
+        Thread.sleep(2000);
+        System.out.println("\nUma figura se destaca à frente: um velho sábio, sentado sobre uma pedra antiga.");
+        Thread.sleep(2000);
 
-        System.out.println("\n🚶‍♂️ Depois de atravessar florestas ocultas e cavernas profundas, entre as árvores surge uma construção de pedra.");
-        System.out.println("Seu coração acelera: este é o lendário Templo da ROCHA SUPREMA!");
+        System.out.println("\n👤 Sábio: \"Ah... outro buscador da Rocha Suprema...\"");
+        Thread.sleep(2000);
+        System.out.println(
+                "Sábio: \"Diga-me, viajante, você sabe ouvir a voz das rochas? Elas falam... mas poucos as escutam.\"");
+        Thread.sleep(2500);
+        System.out.println("Sábio: \"Se deseja continuar, terá que provar seu valor. Está preparado?\"");
+        Thread.sleep(2000);
 
-        System.out.println("\n🔥 A porta do templo está trancada. No centro do salão, há um altar com diferentes rochas.");
-        System.out.println("Para avançar, você precisa classificá-las corretamente, provando seu conhecimento.");
-        System.out.println("Será que você conseguirá superar esse último desafio e entrar na tumba lendária?");
+        System.out.println("\n⚔️ Você faz um aceno firme com a cabeça. Está na hora.");
+        Thread.sleep(2000);
+        System.out.println(
+                "🌲 Após atravessar florestas densas, você encontra uma construção de pedra escondida: o Templo da Rocha Suprema!");
+        Thread.sleep(2500);
 
-        System.out.println("\n🔒 Você se aproxima do altar no centro do templo, onde repousam diversas rochas antigas.");
-        System.out.println("Ao lado, há um painel esculpido na pedra com inscrições em uma linguagem ancestral.");
-        System.out.println("\n📜 A mensagem diz: 'Aquele que deseja adentrar a tumba da ROCHA SUPREMA precisa provar seu conhecimento sobre as rochas do mundo.'");
-        System.out.println("'Classifique corretamente as rochas diante de você e a porta se abrirá.'");
+        System.out.println(
+                "\n🔥 A entrada está trancada. No centro do salão, um altar rodeado de rochas brilha sob um feixe de luz natural.");
+        Thread.sleep(2500);
+        System.out.println(
+                "\n📜 Inscrição no altar: \"Aquele que deseja adentrar a tumba sagrada deverá reconhecer a essência de cada rocha.\"");
+        Thread.sleep(2500);
 
-        System.out.println("\n🧐 Você observa atentamente as rochas sobre o altar. É hora de classificá-las!");
+        System.out.println("\n🧠 Você respira fundo. Hora de testar seus conhecimentos.");
+        Thread.sleep(1500);
 
-        System.out.println("\n🔹 Rocha 1: Granito\nQual é sua classificação?");
-        System.out.println("1 - Ígnea\n2 - Sedimentar\n3 - Metamórfica");
         int pontuacao = 0;
-    
-    for (Rochas r : rochas) { // Aqui, 'r' representa cada rocha da lista
-        System.out.println("\n🔹 Rocha encontrada: " + r.getNome());
-        System.out.println("Qual é sua classificação?");
-        System.out.println("1 - Ígnea\n2 - Sedimentar\n3 - Metamórfica");
-        
-        int escolha = scanner.nextInt();
-        scanner.nextLine();
 
-        boolean correto = (r instanceof Magmaticas && escolha == 1) ||
-                          (r instanceof Sedimentares && escolha == 2) ||
-                          (r instanceof Metamorficas && escolha == 3);
+        for (Rochas r : rochas) {
+            System.out.println("\n🔹 Rocha encontrada: " + r.getNome());
+            Thread.sleep(1500);
+            System.out.println("Qual é sua classificação?");
+            System.out.println("1 - Ígnea\n2 - Sedimentar\n3 - Metamórfica");
 
-        if (correto) {
-            System.out.println("\n✅ Correto! " + r.getNome() + " foi classificada corretamente.");
-            pontuacao++;
-        } else {
-            System.out.println("\n❌ Incorreto! " + r.getNome() + " pertence a outra classificação.");
+            int escolha = scanner.nextInt();
+            scanner.nextLine();
+
+            boolean correto = (r instanceof Magmaticas && escolha == 1) ||
+                    (r instanceof Sedimentares && escolha == 2) ||
+                    (r instanceof Metamorficas && escolha == 3);
+
+            if (correto) {
+                System.out.println("\n✅ Correto! " + r.getNome() + " revelou sua verdadeira natureza.");
+                pontuacao++;
+            } else {
+                System.out.println("\n❌ Incorreto! " + r.getNome() + " guarda segredos que ainda não compreende.");
+            }
+
+            Thread.sleep(1500);
         }
+
+        if (pontuacao >= 3) {
+            System.out.println("\n🔓 Um estrondo ecoa pelo templo. As portas de pedra se abrem lentamente...");
+            Thread.sleep(2500);
+            System.out.println("No centro da sala sagrada, um pedestal com uma rocha pulsante de luz o aguarda.");
+            Thread.sleep(2000);
+            System.out.println("\n🌟 Você se aproxima. Ao tocá-la, uma onda de conhecimento invade sua mente.");
+            Thread.sleep(2500);
+            System.out
+                    .println("\n👤 Sábio (voz distante): \"Agora você entende... A Rocha Suprema não é um objeto...\"");
+            Thread.sleep(2000);
+            System.out.println(
+                    "👤 Sábio: \"...ela é o conhecimento que você conquistou com esforço, coragem e curiosidade.\"");
+            Thread.sleep(2500);
+            System.out.println(
+                    "\n🎉 Parabéns, aventureiro! A verdadeira Rocha Suprema são os conhecimentos que você adquiriu pelo caminho!");
+        } else {
+            System.out.println(
+                    "\n🚪 As portas permanecem seladas. O templo sussurra: \"Volte quando estiver mais preparado...\"");
+            Thread.sleep(2000);
+            System.out.println("\n📘 Dica: Visite a Biblioteca Real para estudar mais antes de tentar novamente.");
+        }
+
     }
 
-    if (pontuacao >= 3) {
-        System.out.println("\n🎉 A tumba está satisfeita com seus resultados! A porta se abre lentamente...");
-        System.out.println("Ao abrir o baú que contém a ROCHA SUPREMA, você descobre uma verdade libertadora:");
-        System.out.println("A verdadeira ROCHA SUPREMA são os conhecimentos que você adquiriu durante a jornada! Parabéns! ❤️");
-    } else {
-        System.out.println("\n🚪 A tumba permanece fechada. Talvez seja hora de aprender mais e tentar novamente!");
-    }
-
-    }
     public void bibliotecaReal() {
-        System.out.println("\n📚 Você adentra a majestosa Biblioteca Real, onde pergaminhos e livros centenários repousam sobre prateleiras douradas.");
-        System.out.println("Os sábios estudam atentamente mapas antigos, fórmulas geológicas e registros de expedições.");
+        System.out.println(
+                "\n📚 Você adentra a majestosa Biblioteca Real, onde pergaminhos e livros centenários repousam sobre prateleiras douradas.");
+        System.out
+                .println("Os sábios estudam atentamente mapas antigos, fórmulas geológicas e registros de expedições.");
         System.out.println("\nAqui você pode aprender tudo sobre a formação das rochas e expandir sua sabedoria.");
 
         System.out.println("\nEscolha o que deseja aprender:");
@@ -112,30 +147,32 @@ public class QuizGeo {
         Rochas metamorficas = new Metamorficas(null);
         Rochas sedimentares = new Sedimentares(null);
 
-
         int escolha = scanner.nextInt();
         scanner.nextLine();
 
         if (escolha == 1) {
-            System.out.println("\n📖 Aprendendo Conceitos..."); 
+            System.out.println("\n📖 Aprendendo Conceitos...");
             rocha.exibirConteudo();
             magmaticas.exibirConteudo();
             sedimentares.exibirConteudo();
             metamorficas.exibirConteudo();
-            System.out.println("\n✨ O conhecimento é seu maior tesouro! Agora você pode continuar explorando ou voltar.");
-        } 
-        else if (escolha == 2) {
+            System.out
+                    .println("\n✨ O conhecimento é seu maior tesouro! Agora você pode continuar explorando ou voltar.");
+        } else if (escolha == 2) {
             System.out.println("\n🔍 Exemplos Práticos...");
-            System.out.println("\n🔍 Exemplo: O granito e o basalto são rochas magmáticas, muito usadas na construção e em pisos.");            System.out.println("\n🌊 Rochas Sedimentares: Surgem a partir da compactação de sedimentos ao longo de milhões de anos.");
-            System.out.println("\n🔍 Exemplo: O calcário e o arenito são rochas sedimentares, encontradas em cavernas e utilizadas na produção de cimento.");
-            System.out.println("\n🔍 Exemplo: O mármore e o gnaisse são rochas metamórficas, usadas em esculturas e revestimentos sofisticados.");
+            System.out.println(
+                    "\n🔍 Exemplo: O granito e o basalto são rochas magmáticas, muito usadas na construção e em pisos.");
+            System.out.println(
+                    "\n🌊 Rochas Sedimentares: Surgem a partir da compactação de sedimentos ao longo de milhões de anos.");
+            System.out.println(
+                    "\n🔍 Exemplo: O calcário e o arenito são rochas sedimentares, encontradas em cavernas e utilizadas na produção de cimento.");
+            System.out.println(
+                    "\n🔍 Exemplo: O mármore e o gnaisse são rochas metamórficas, usadas em esculturas e revestimentos sofisticados.");
             System.out.println("\n✨ Agora que viu alguns exemplos, sua compreensão ficou ainda mais forte!");
-        } 
-        else if (escolha == 3) {
+        } else if (escolha == 3) {
             System.out.println("\n🔙 Você sai da biblioteca e se prepara para sua jornada!");
-            SelecionarAtv(); // Sai do loop e retorna ao menu principal
-        } 
-        else {
+            SelecionarAtv();
+        } else {
             System.out.println("\n⚠️ Escolha inválida! Tente novamente.");
         }
 
