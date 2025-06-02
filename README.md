@@ -35,8 +35,8 @@ Desenvolvido para prática com conceitos de programação orientada a objetos e 
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/SeuUsuario/JornadaDoConhecimento_Quiz.git
-cd JornadaDoConhecimento_Quiz
+https://github.com/MarinhoCorrea/Atv_Pratica.git
+cd Atvpratica
 ```
 
 2. Compile todos os arquivos .java (incluindo módulos):
