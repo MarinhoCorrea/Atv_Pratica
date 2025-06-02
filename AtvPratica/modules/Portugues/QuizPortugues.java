@@ -39,20 +39,20 @@ public class QuizPortugues {
 
         System.out.println(
                 "Ótimo, nossa primeira parada será o século XII! Iremos explorar o movimento conhecido como TROVADORISMO!");
-        Thread.sleep(1500);
+        Thread.sleep(2500);
 
         System.out
                 .println("\nS.A.M.I.R.A.: Estamos em uma vila medieval. Veja, um trovador se aproxima com sua viola!");
-        Thread.sleep(1500);
+        Thread.sleep(2500);
 
         System.out.println(
                 "Trovador: \"Senhora, por vós suspiro com grande paixão... / Neste mundo, só vós dais luz ao meu coração.\"");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         System.out.println("\nS.A.M.I.R.A.: Vamos entender melhor esse período:");
         trovadorismo.exibirConteudo();
         System.out.println("Autor marcante: " + trovadorismo.getAutorPrincipal() + ", que além de rei, era poeta!");
-        Thread.sleep(2500);
+        Thread.sleep(3500);
 
         // PERGUNTA 1
         System.out.println(
@@ -72,7 +72,7 @@ public class QuizPortugues {
                 System.out.println("Trovador: Hmm... acho que não é essa.");
             }
         } while (!resposta.equals("b"));
-        Thread.sleep(1500);
+        Thread.sleep(2500);
 
         // PERGUNTA 2
         System.out.println(
@@ -92,25 +92,25 @@ public class QuizPortugues {
             }
         } while (!resposta.equals("a"));
 
-        Thread.sleep(1500);
+        Thread.sleep(2500);
 
         System.out.println(
                 "\nTrovador: Com sua ajuda, minha arte está salva! Que a poesia continue encantando os corações!");
         System.out.println(
                 "S.A.M.I.R.A.: Ótimo! Ao ajudar o trovador consgeuimos um fragmento! Vamos seguir nossa jornada para a próxima escola literária...");
         System.out.println("\nS.A.M.I.R.A.: Excelente! Agora vamos para o século XIX... bem-vindo ao Romantismo!");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         System.out.println(
                 "\nVocê aparece em uma colina, vendo um jovem melancólico olhando o pôr do sol, segurando um livro.");
         System.out
                 .println("Rapaz Romântico: \"Ah, meu amor perdido! Minha alma vagueia pelas memórias de Cecília...\"");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         System.out.println(
                 "\nS.A.M.I.R.A.: O Romantismo exaltava a emoção, a natureza e os sentimentos idealizados. Era comum a presença de amores impossíveis e figuras sonhadoras.");
         System.out.println("Autor marcante: Álvares de Azevedo, com sua melancolia característica.");
-        Thread.sleep(2500);
+        Thread.sleep(3500);
 
         System.out.println("\nMissão 1: Que característica principal define o Romantismo?");
         do {
@@ -128,7 +128,7 @@ public class QuizPortugues {
             }
         } while (!resposta.equals("c"));
 
-        Thread.sleep(1500);
+        Thread.sleep(2500);
 
         System.out.println("\nMissão 2: Qual desses autores também pertence ao Romantismo brasileiro?");
         do {
@@ -146,22 +146,22 @@ public class QuizPortugues {
             }
         } while (!resposta.equals("b"));
 
-        Thread.sleep(1500);
+        Thread.sleep(2500);
 
         System.out.println(
                 "\nS.A.M.I.R.A.: Boa! Mais um fragmento! Agora, vamos para a próxima e última parada: o Realismo!");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         System.out.println(
                 "\nVocê acorda em um escritório antigo, com livros e papéis sobre a mesa. Um homem sério escreve em silêncio.");
         System.out.println("Homem: \"A realidade precisa ser exposta. Não há espaço para ilusão nos olhos da razão.\"");
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         System.out.println(
                 "\nS.A.M.I.R.A.: Bem-vindo ao Realismo! Aqui, os autores abandonaram a idealização romântica e passaram a retratar os fatos com objetividade, focando em problemas sociais e psicológicos.");
         System.out.println(
                 "Autor marcante: Machado de Assis, com obras como 'Dom Casmurro' e 'Memórias Póstumas de Brás Cubas'.");
-        Thread.sleep(2500);
+        Thread.sleep(3500);
 
         System.out.println(
                 "\nMissão 1: O escritor está com dúvidas sobre qual obra realista retrata bem o comportamento humano. Qual é a correta?");
@@ -180,7 +180,7 @@ public class QuizPortugues {
             }
         } while (!resposta.equals("c"));
 
-        Thread.sleep(1500);
+        Thread.sleep(2500);
 
         System.out.println("\nMissão 2: O Realismo se opõe diretamente a qual movimento literário anterior?");
         do {
@@ -198,31 +198,31 @@ public class QuizPortugues {
             }
         } while (!resposta.equals("c"));
 
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         System.out.println(
                 "\nS.A.M.I.R.A.: Parabéns! Você completou a missão com sucesso e reuniu os fragmentos das três eras literárias!");
         System.out.println("A Apostila Suprema agora pode ser reconstruída!\n");
 
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         System.out.println(
                 "\nS.A.M.I.R.A.: A Apostila Suprema brilha em suas mãos, reunindo os conhecimentos que você conquistou com coragem, inteligência e sensibilidade.");
-        Thread.sleep(2500);
+        Thread.sleep(3500);
 
         System.out.println(
                 "\nUm portal dourado se abre diante de você, iluminando o caminho de volta para sua realidade.");
         System.out.println(
                 "S.A.M.I.R.A.: \"Mas lembre-se, viajante... o verdadeiro poder não está nos livros, e sim em como você os vive.\"");
-        Thread.sleep(3000);
+        Thread.sleep(4000);
 
         System.out.println(
                 "\nCom um último olhar para os personagens que encontrou — o trovador apaixonado, o jovem romântico, o autor realista — você atravessa o portal.");
-        Thread.sleep(2500);
+        Thread.sleep(3500);
 
         System.out.println("\nAo retornar, tudo parece igual... mas algo mudou dentro de você.");
         System.out.println(
                 "Você agora carrega em si as vozes do passado, prontos para guiá-lo nos desafios do presente.");
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         scanner.close();
     }
 }
