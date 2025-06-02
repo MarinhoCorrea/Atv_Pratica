@@ -8,7 +8,6 @@
 - [⚙️ Como instalar e executar](#-como-instalar-e-executar)
 - [💠 Tecnologias utilizadas](#-tecnologias-utilizadas)
 - [📄 Licença](#-licença)
-- [🎥 Vídeo explicativo](#-vídeo-explicativo)
 
 ---
 
